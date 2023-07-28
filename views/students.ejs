@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <center>
+    <h1>Student Details</h1>
+    <%  if(data.length > 0) { %>
+        <% for(var i=0;i<data.length;i++) { %>
+            <h3>Name : <%- data[i].fname %></h3>
+            <h3>Register Number :<%- data[i].reg %> </h3>
+            <h3>Date of Birth : <%- data[i].dob %></h3>
+            <h3>Age :<%- data[i].age %> </h3>
+            <h3>Address : <%- data[i].address %></h3>
+            <h3>Mail : <%- data[i].mail %></h3>
+            <h3>Phone : <%- data[i].phone %> </h3>
+            <hr>
+            <% } %>
+    <% } %>
+        </center>
+</body>
+</html>

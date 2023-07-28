@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <center>
+        <form action="/" method="post">
+            <br/>
+            <h1>Student Registration Form</h1>
+            <br />
+            <hr>
+            <br/>
+            <label>Name * : </label>
+            <br/>
+            <br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name.." required>
+            <br/>
+            <br/>
+            <label>Register Number * : </label>
+            <br>
+            <br/>
+            <input type="text" id="reg" name="reg" placeholder="Enter your Register Number.." required>
+            <br />
+            <br/>
+            <label>Date of Birth * : </label>
+            <br>
+            <br/>
+            <input type="date" id="dob" name="dob" required>
+            <br/>
+            <br/>
+            <label>Age * :</label>
+            <br>
+            <br/>
+            <input type="number" id="age" name="age" placeholder="Enter your Age.." required>
+            <br />
+            <br/>
+            <label>Address * : </label>
+            <br>
+            <br/>
+            <input type="text" id="address" name="address" placeholder="Enter your Address.." required>
+            <br/>
+            <br/>
+            <label>Email * : </label>
+            <br>
+            <br/>
+            <input type="text" id="mail" name="mail" placeholder="Enter your Email.." required>
+            <br/>
+            <br/>
+            <label>Phone number * : </label>
+            <br>
+            <br/>
+            <input type="text" id="phone" name="phone" placeholder="Enter your Phone number" required>
+            <br />
+            <br/>
+            <input type="submit" name="submit">
+        </form>
+        <h4>Fields that are marked as * are mandatory</h4>
+        <button><a href="http://localhost:3000/students">STORED DETAILS</a></button>
+    </center>
+</body>
+</html>
+<style>
+    body{
+        background-color:black;
+        color:white;
+    }
+    input{
+        border-radius: 12%;
+    }
+</style>
